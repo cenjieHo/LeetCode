@@ -1,4 +1,4 @@
-package array.easy.removeElement;
+package algorithms.array.easy.removeElement;
 
 public class MainClass {
     public static void main(String[] args) {

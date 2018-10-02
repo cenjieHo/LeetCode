@@ -1,4 +1,4 @@
-package array.easy.removeElement;
+package algorithms.array.easy.removeElement;
 
 public class Solution2 {
     public int removeElement(int[] nums, int val) {

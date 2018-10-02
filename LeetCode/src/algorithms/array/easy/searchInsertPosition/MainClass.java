@@ -1,4 +1,4 @@
-package array.easy.searchInsertPosition;
+package algorithms.array.easy.searchInsertPosition;
 
 public class MainClass {
 	public static void main(String[] args) {

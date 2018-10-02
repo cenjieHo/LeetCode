@@ -1,4 +1,4 @@
-package array.easy.searchInsertPosition;
+package algorithms.array.easy.searchInsertPosition;
 
 public class Solution {
     public int searchInsert(int[] nums, int target) {
