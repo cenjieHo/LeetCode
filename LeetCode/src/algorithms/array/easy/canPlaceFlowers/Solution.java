@@ -10,7 +10,6 @@ public class Solution {
     			flowerbed[i] = 1;
     		}
     	}
-        
         return cap - n >= 0 ? true : false;
     }
 }
