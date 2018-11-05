@@ -27,3 +27,7 @@ public class Solution {
 	    return list;
 	}
 }
+
+/**
+s:"cbaebabacd"  p:"abc"
+*/

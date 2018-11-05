@@ -20,7 +20,8 @@ public class MyHashSet {
     
     public void add(int key) {
         int hash = this.hash(key);
-        Node node = table[hash & (table.length-1)];
+        int index = hash & (table.length-1);
+        Node node = table[index];
         if(node != null) {
         	Node prev = null;
         	do {
@@ -30,13 +31,14 @@ public class MyHashSet {
         	} while(node != null);
         	prev.next = new Node(key);
         } else {
-        	table[hash & (table.length-1)] = new Node(key);
+        	table[index] = new Node(key);
         }
     }
     
     public void remove(int key) {
         int hash = this.hash(key);
-        Node node = table[hash & (table.length-1)];
+        int index = hash & (table.length-1);
+        Node node = table[index];
         if(node != null) {
         	Node prev = null;
         	Node next;
@@ -44,7 +46,7 @@ public class MyHashSet {
         		next = node.next;
         		if(node.key == key) {
         			if(prev == null) 
-        				table[hash & (table.length-1)] = next;
+        				table[index] = next;
         			else 
         				prev.next = next;
         			return;
