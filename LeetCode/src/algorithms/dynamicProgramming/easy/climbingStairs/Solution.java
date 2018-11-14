@@ -18,7 +18,6 @@ public class Solution {
 初始状态：
 f(1) = 1
 f(2) = 2
-f(3) = 3
 
 状态转移方程：
 f(n) = f(n-2) + f(n-1)
