@@ -21,11 +21,11 @@ public class Solution {
     }
     
     public int toDecimal(int[] binary) {
-        long sum = 0;
+        int sum = 0;
     	int index = 0;
     	for(int i = binary.length-1; i >= 0; i--) {
     		sum += binary[i] * Math.pow(2, index++);
     	}
-    	return (int)sum;
+    	return sum;
     }
 }
