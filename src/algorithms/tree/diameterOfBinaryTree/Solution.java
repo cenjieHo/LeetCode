@@ -12,10 +12,10 @@ public class Solution {
     
     private int depth(TreeNode root) {
     	if(root == null) return 0;
-    	int ld = depth(root.left);
-    	int rd = depth(root.right);
-    	res = Math.max(res, ld + rd);
-    	return Math.max(ld+1, rd+1);
+    	int left = depth(root.left);
+    	int right = depth(root.right);
+    	res = Math.max(res, left + right);
+    	return Math.max(left, right) + 1;
     }
 }
 
