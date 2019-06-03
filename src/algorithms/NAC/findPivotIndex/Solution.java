@@ -1,0 +1,19 @@
+package algorithms.NAC.findPivotIndex;
+
+public class Solution {
+    public int pivotIndex(int[] nums) {
+        if(nums == null || nums.length == 0)
+        	return -1;
+        int sum = 0;
+        for(int i = 0; i < nums.length; i++) {
+        	sum += nums[i];
+        }
+        int cnt = 0;
+        for(int i = 0; i < nums.length; i++) {
+        	int s = sum - nums[i];
+        	if(s * 1.0 / 2 == cnt) return i;
+        	cnt += nums[i];
+        }
+        return -1;
+    }
+}
